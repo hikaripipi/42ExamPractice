@@ -46,7 +46,7 @@ while true; do
                 pid=$!
                 slept=0
 
-                while [ $slept -lt 10 ] && kill -0 $pid 2>/dev/null; do
+                while [ $slept -lt 30 ] && kill -0 $pid 2>/dev/null; do
                 sleep 1
                 slept=$((slept+1))
                 done
